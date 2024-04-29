@@ -191,13 +191,12 @@ h3 {
     justify-content: space-between;
     column-gap: 5vw;
     row-gap: 4vh;
-    height: 44vh;
+    height: 50vh;
 }
 
 .section-3 img {
-    width: 50%;
     border-radius: 5px;
-    height: 44vh;
+    height: 50vh;
 }
 
 .section-3 h2 {
@@ -208,6 +207,11 @@ h3 {
 .section-3 p {
     font-size: 18px;
     line-height: 1.6rem;
+}
+
+.section-3 .content {
+    margin: 5vh 0;
+
 }
 
 .content {
@@ -394,7 +398,7 @@ span {
     align-items: center;
     row-gap: 6vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-        url("assets/img1.jpg");
+        url('images/contact-home.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
