@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets/style.css" />
+
+    <title></title>
+</head>
+
+<body>
+    <header>
+        <div class="left-nav" onclick="toHome()">
+            <img class="logo" src="assets/solar-energy.png" />
+            <p style="font-size: 18px; cursor: pointer; color: #275030            ; font-weight: 600">
+                Shamali Oil
+            </p>
+        </div>
+        <div class="right-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="menu-btn">
+            <img style="width: 30px" id="menu-icon" onclick="toggleMenu()" src="assets/menu-icon.png" />
+        </div>
+    </header>
+    <div class="menu" id="menu">
+        <div class="m-btn">
+            <img style="width: 30px" id="menu-icon" onclick="toggleMenu()" src="assets/menu-icon.png" />
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+    <section class="section-1">
+        <img src="Assets/images/main.jpg" style=" filter: brightness(80%); object-fit:fill; height:76vh ;width:100vw">
+        <div class="intro-text">
+            <h2>
+                "Uniting Expertise, Cultures, and Innovation in Every Drop"
+            </h2>
+            <!-- <button>How it Works</button> -->
+        </div>
+    </section>
+
+    <section class="section-3">
+        <div class="content">
+            <div class="heading">
+                <span>Shamali Oil</span>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis vero temporibus a impedit corrupti,
+                animi est natus repellendus mollitia. Ipsum assumenda ratione tempore vel eveniet, quasi nemo ipsam modi
+                delectus.
+            </p>
+            <button onclick="location.href = 'about.html';">About Us</button>
+        </div>
+        <img src="Assets/images/about-home.jpg" alt="" />
+    </section>
+
+    <section class="section-4">
+        <span class="section-heading">Our Product</span>
+        <div class="cards">
+            <div class="card">
+                <img src="Assets/images/product-home.jpg" alt="" />
+                <div class="card-content">
+                    <h3>Cooking Oil</h3>
+                    <p style="text-align: left;">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo deserunt rerum, blanditiis,
+                        eveniet qui iusto odit, officia eum quidem officiis sit magnam voluptas nobis corporis deleniti
+                        tenetur at dicta in. </p>
+                    <a href="product.html"><span>Read More</span> </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-grid">
+            <img class="logo" src="assets/solar-energy.png" alt="" />
+            <div class="footer-body">
+                <div class="footer-title">
+                    <h1>Would like to try our product?</h1>
+                    <p>Feel free to contact us</p>
+                </div>
+                <div class="links">
+
+                    <div class="col">
+                        <p>Important Links</p>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="products.html">Products</a></li>
+
+                            <li><a href="contact.html">Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <p>Get in touch</p>
+                        <ul>
+                            <li style="display: flex; align-items: center;">
+                                <img class="icon" style="padding-bottom: 8px;"
+                                    src="Assets/images/address-icon.png" />Lorem,
+                                ipsum dolor sit amet consectetur adipisicing elit. Assumenda, a?
+                                <br> Lorem, ipsum.
+                            </li>
+                            <li class="email">
+                                <img class="icon" src="Assets/images/mail-icon.png" />
+                                Lorem, ipsum.
+                            </li>
+                            <li>
+                                <img class="icon" src="Assets/images/call-icon.png" />
+                                Lorem.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>&copy; 2023. Shamli Oil | </p>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var x = document.getElementById("menu");
+            if (x.style.visibility === "visible") {
+                x.style.opacity = "0";
+                x.style.visibility = "hidden";
+            } else {
+                x.style.opacity = "1";
+                x.style.visibility = "visible";
+            }
+        }
+
+    </script>
+</body>
+
+</html>
