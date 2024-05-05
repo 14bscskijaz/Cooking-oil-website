@@ -140,7 +140,7 @@ p {
 
 .img-1 {
     position: relative;
-
+    object-fit: contain;
 }
 
 .img-2 {
