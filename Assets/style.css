@@ -719,24 +719,45 @@ footer li {
 /** About Page **/
 
 .section-about {
-    background-image: url(assets/about.jpg);
+    background-image: url(images/factory.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+}
 
+.section-about h1 {
+    color: white;
+    position: absolute;
+    top: 22vh;
+    left: 38vw;
+    font-size: 60px;
 }
 
 .about-flex {
     display: flex;
-    justify-content: space-between;
-    column-gap: 7vw;
+    flex-direction: column;
+    row-gap: 2vh;
+    justify-content: center;
 }
 
-.flex-content {
+h4 {
+    color: #275030;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: #00a776 2px double;
+    width: 20vw;
+}
+
+.about-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 50%;
+    row-gap: 5vh;
+    width: 70%;
+    margin: 10vh 10vw;
 }
 
 .about-flex img {
