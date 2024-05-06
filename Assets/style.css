@@ -723,17 +723,31 @@ footer li {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
-    height: 60vh;
+    height: 68vh;
     width: 100vw;
-    position: relative;
+}
+
+.section-contact {
+    background-image: url(images/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 68vh;
+    width: 100vw;
 }
 
 .section-about h1 {
     color: white;
-    position: absolute;
-    top: 22vh;
-    left: 38vw;
+    text-align: center;
     font-size: 60px;
+    padding-top: 24vh;
+}
+
+.section-contact h1 {
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    padding-top: 24vh;
 }
 
 .about-flex {
@@ -749,6 +763,14 @@ h4 {
     text-transform: uppercase;
     border-bottom: #00a776 2px double;
     width: 20vw;
+}
+
+h5 {
+    color: #275030;
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: #00a776 2px double;
+    width: 36vw;
 }
 
 .about-content {
@@ -823,12 +845,7 @@ h4 {
 /** Styling for contacts page **/
 
 
-.section-contact {
-    background: url('assets/contactus-bg.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
+
 
 .tiles {
     display: grid;
@@ -868,9 +885,10 @@ input {
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 4vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 8vh;
+    column-gap: 4vw;
 }
 
 
@@ -900,7 +918,7 @@ textarea {
     border-radius: 5px;
     height: 34vh;
     font-family: 'Nunito Sans', sans-serif;
-
+    width: 36vw;
 }
 
 textarea::placeholder {
