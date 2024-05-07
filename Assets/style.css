@@ -740,14 +740,14 @@ footer li {
     color: white;
     text-align: center;
     font-size: 60px;
-    padding-top: 24vh;
+    padding-top: 27vh;
 }
 
 .section-contact h1 {
     color: white;
     text-align: center;
     font-size: 60px;
-    padding-top: 24vh;
+    padding-top: 27vh;
 }
 
 .about-flex {
@@ -799,8 +799,7 @@ h5 {
 /** Styling for proucts page **/
 
 .section-product {
-    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-        url("assets/Products-page.jpeg");
+    background: #e4fae4;
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
