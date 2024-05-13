@@ -477,18 +477,19 @@ span {
 
 .location-cards {
     display: grid;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    grid-template-columns: 1fr 1fr 1fr;
+    margin: 1vh 0 4vh 0;
 }
 
 .location-card {
     display: grid;
     grid-template-rows: 3fr 1fr 1fr 1fr;
-    height: 320px;
-    padding: 5vh 2vw;
+    height: 360px;
+    padding: 5vh 3vw;
     align-items: center;
     justify-items: center;
     /* Centers content horizontally */
@@ -549,7 +550,8 @@ span {
 .location-card p {
     color: white;
     text-align: center;
-
+    font-weight: 600;
+    font-size: 16px;
 }
 
 .location-card img {
@@ -575,7 +577,6 @@ span {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
 }
 
 .lc-4 {
