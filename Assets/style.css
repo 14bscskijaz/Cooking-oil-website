@@ -489,7 +489,7 @@ span {
     align-items: center;
     row-gap: 6vh;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
-        url('images/logo-bg.png');
+        url('images/logo-bg.jpeg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -775,7 +775,7 @@ footer li {
 }
 
 .section-contact {
-    background-image: url(images/contact.jpg);
+    background-image: url(images/contact.jpeg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
