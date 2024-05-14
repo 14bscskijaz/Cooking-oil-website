@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
     <title></title>
 </head>
@@ -35,47 +36,89 @@
     </div>
     <section class="section-1">
         <div class="main">
-            <h1 class="h-flex">
-                "Crafting Culinary Magic from Every Recycled Oil Drop"
-            </h1>
-            <!-- <button>How it Works</button> -->
-            <div class="intro-images">
-                <img class="img-1" src="Assets/images/oil-drum.png" />
-                <img class="img-2" src="Assets/images/recycle.png" />
-                <img class="img-3" src="Assets/images/delivery-package.jpg" />
+            <div class="h-flex">
+                <h1>
+                    Shamali Oil
+                </h1>
+                <div class="flex-row"> <button class="b1">Request Collection</button>
+                    <button class="b1">Request Delivery</button>
+                </div>
+            </div>
+
+
+            <div class="main-box" data-aos="fade-left" data-aos-duration="2000">
+                <div class="box-item">
+                    <img src="Assets/images/truck-icon.png">
+                    <div class="box-text">
+                        <h2>Collection</h2>
+                        <p>We gather your used cooking oil hassle-free, ensuring a sustainable cycle begins right at
+                            your doorstep. </p>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <img src="Assets/images/recycle-icon.png">
+                    <div class="box-text">
+                        <h2>Recycling</h2>
+                        <p>Through advanced processes, we refine used cooking oil. Our
+                            commitment to innovation ensures every drop contributes to a greener tomorrow.</p>
+                    </div>
+
+                </div>
+                <div class="box-item">
+                    <img src="Assets/images/box-icon.png">
+                    <div class="box-text">
+                        <h2>Delivery</h2>
+                        <p>Experience convenience with our seamless delivery service. We ensure a smooth transition
+                            towards a more sustainable
+                            future.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+    <section class="section-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="content">
+            <div class="heading">
+                <span>Shamali Oil</span>
+                <h2>Get to Know Us</h2>
+            </div>
+            <p>
+                Innovators in the industry, powered by an international, cross-functional team. Leveraging extensive
+                partner experience from the UK, Hong Kong, India, Vietnam, Afghanistan, and China, we understand and
+                meet client needs globally.
+            </p>
+            <button onclick="location.href = 'about.html';">About Us</button>
+        </div>
+        <img src="Assets/images/img-about.PNG" />
     </section>
 
     <section class="section-4">
         <span class="section-heading">Our Services</span>
         <div class="cards">
-            <div class="card">
-                <img class="img-left" src="Assets/images/collection-oil.png" alt="" />
-                <div class="card-content" style="grid-column: 2;">
+            <div class="card" data-aos="fade-left" data-aos-duration="1000">
+                <img class="img-left" src="Assets/images/img-people.jpg" alt="" />
+                <div class="card-content" style="grid-column: 2; padding-right: 2vw;">
                     <h3>Request Collection</h3>
                     <p style="text-align: left;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo deserunt rerum, blanditiis,
-                        eveniet qui iusto odit, officia eum quidem officiis sit magnam voluptas nobis corporis deleniti
-                        tenetur at dicta in. </p>
+                        Schedule a pickup effortlessly. Let us handle your used cooking oil, transforming waste into
+                        renewable energy with every collection request </p>
                 </div>
-
             </div>
-            <div class="card">
-                <img class="img-right" src="Assets/images/delivery.png" alt="" />
-                <div class="card-content">
+            <div class="card" data-aos="fade-right" data-aos-duration="1000">
+                <img class="img-right" src="Assets/images/img-truck.jpg" alt="" />
+                <div class="card-content" style="padding-left: 2vw;">
                     <h3>Request Delivery</h3>
-                    <p style="text-align: left;">
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo deserunt rerum, blanditiis,
-                        eveniet qui iusto odit, officia eum quidem officiis sit magnam voluptas nobis corporis deleniti
-                        tenetur at dicta in. </p>
+                    <p style="text-align: left; ">
+                        Simplify your fuel sourcing. Submit a delivery request and receive eco-friendly cooking oil,
+                        crafted
+                        from recycled cooking oil, straight to your location.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="section-7">
+    <section class="section-7" data-aos="flip-up" data-aos-duration="1500">
         <span class="section-heading">Our Locations</span>
         <div class="location-cards">
             <div class="location-card lc-2">
@@ -100,26 +143,12 @@
     </section>
 
 
-    <section class="section-3">
-        <div class="content">
-            <div class="heading">
-                <span>Shamali Oil</span>
-                <h2>Get to Know Us</h2>
-            </div>
-            <p>
-                Innovators in the industry, powered by an international, cross-functional team. Leveraging extensive
-                partner experience from the UK, Hong Kong, India, Vietnam, Afghanistan, and China, we understand and
-                meet client needs globally.
-            </p>
-            <button onclick="location.href = 'about.html';">About Us</button>
-        </div>
-        <img src="Assets/images/lifter1.png" alt="" />
-    </section>
 
     <section class="section-6">
         <h2>Need Assistance? Get in Touch</h2>
         <p style="color: white">
-            Our dedicated team is here to help you with anything you need. </p>
+            Connect with our team for inquiries, collaborations, or to schedule a pickup and delivery service. Your
+            contribution to sustainability starts here. We're eager to hear from you!</p>
         <button onclick="location.href = 'contact.html';">
             Contact Us
         </button>
@@ -171,9 +200,10 @@
             </div>
         </div>
         <div class="footer-end">
-            <p>&copy; 2023. Shamli Oil | </p>
+            <p>&copy; 2023. Shamali Oil | </p>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
         function toggleMenu() {
@@ -186,6 +216,8 @@
                 x.style.visibility = "visible";
             }
         }
+
+        AOS.init();
 
     </script>
 </body>
