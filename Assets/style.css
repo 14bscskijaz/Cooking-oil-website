@@ -766,10 +766,19 @@ footer li {
 /** About Page **/
 
 .section-about {
-    background-image: url(images/factory.png);
+    background-image: url(images/About-main.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
+    height: 68vh;
+    width: 100vw;
+}
+
+.section-sust {
+    background-image: url(images/sust-main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     height: 68vh;
     width: 100vw;
 }
@@ -802,6 +811,7 @@ footer li {
     flex-direction: column;
     row-gap: 2vh;
     justify-content: center;
+    align-items: center;
 }
 
 h4 {
@@ -809,7 +819,7 @@ h4 {
     font-size: 24px;
     text-transform: uppercase;
     border-bottom: #00a776 2px double;
-    width: 20vw;
+    padding: 0 5vw 0 0;
 }
 
 h5 {
@@ -827,11 +837,36 @@ h5 {
     row-gap: 5vh;
     width: 70%;
     margin: 10vh 10vw;
+    align-items: center;
 }
 
 .about-flex img {
     width: 50%;
     border-radius: 5px;
+}
+
+.flex-grow {
+    display: flex;
+    margin: 0vh 0vw;
+    gap: 50px;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+
+.flex-grow p,
+.flex-grow h3 {
+    margin: 1vh 1vw 0 1vw;
+}
+
+.flex-grow img {
+    width: 50%;
+    height: 60vh;
+}
+
+.s-img {
+    height: 60vh;
 }
 
 .mission-content {
@@ -921,13 +956,14 @@ h5 {
 }
 
 input {
-    width: 36vw;
-    height: 8vh;
+    width: 30vw;
+    height: 5vh;
     padding-left: 1vw;
     font-size: 16px;
     border: 1px solid lightgray;
     color: black;
     border-radius: 5px;
+    margin-top: .5vh;
 }
 
 form {
