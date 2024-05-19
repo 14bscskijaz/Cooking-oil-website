@@ -783,6 +783,18 @@ footer li {
     width: 100vw;
 }
 
+.wa-icon {
+    position: fixed;
+    height: 7vh;
+    right: 2.5vw;
+    top: 90vh;
+    z-index: 2;
+    border: .4vw solid #25D366;
+    border-radius: 50%;
+    background-color: #25D366;
+    cursor: pointer;
+}
+
 .section-contact {
     background-image: url(images/contact.jpeg);
     background-position: center;
