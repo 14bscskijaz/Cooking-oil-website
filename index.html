@@ -43,8 +43,9 @@
                 <h1>
                     Shamali Oil
                 </h1>
-                <div class="flex-row"> <button class="b1">Request Collection</button>
-                    <button class="b1">Request Delivery</button>
+                <div class="flex-row"> <button onclick="OpenEmail('Request Collection')" class="b1">Request
+                        Collection</button>
+                    <button onclick="OpenEmail('Request Delivery')" class="b1">Request Delivery</button>
                 </div>
             </div>
 
@@ -92,7 +93,7 @@
             </p>
             <button onclick="location.href = 'about.html';">About Us</button>
         </div>
-        <img src="Assets/images/img-about.PNG" />
+        <img src="Assets/images/img-about.png" />
     </section>
 
     <section class="section-4">
@@ -209,6 +210,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
+
+        function OpenEmail(subject) {
+            window.open(
+                `mailto:Hassan@shamalioil.com?subject=Query for ${subject}&body=Name: %0DEmail: %0DMessage:`
+            );
+            // var e = document.getElementById("SelectCountry");
+            // var text = e.options[e.selectedIndex].text;
+            // if (text === "-- Please Select an office --") {
+            //     alert("Please choose an office");
+            // } else {
+            //     var message = document.getElementById("Message").value;
+            //     var name = document.getElementById("Name").value;
+            //     var email = document.getElementById("Email").value;
+            //     console.log(name);
+            //     window.open(
+            //         `mailto:bustard-02.aurora@icloud.com?subject=Query for ${text} Office&body=Name:${name} %0DEmail:${email} %0DMessage:${message}`
+            //     );
+            // }
+        }
+
         function toggleMenu() {
             var x = document.getElementById("menu");
             if (x.style.visibility === "visible") {
