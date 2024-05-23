@@ -42,7 +42,7 @@ header {
 .right-nav {
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 .menu {
@@ -171,7 +171,6 @@ p {
     align-content: flex-start;
     justify-content: center;
     flex-wrap: wrap;
-
 }
 
 .flex-row {
@@ -783,6 +782,15 @@ footer li {
     width: 100vw;
 }
 
+.section-whyus {
+    background-image: url(images/why-us.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 68vh;
+    width: 100vw;
+}
+
 .wa-icon {
     position: fixed;
     height: 7vh;
@@ -804,19 +812,19 @@ footer li {
     width: 100vw;
 }
 
-.section-about h1 {
+.section-about h1,
+.section-sust h1,
+.section-whyus h1 {
     color: white;
     text-align: center;
     font-size: 60px;
     padding-top: 27vh;
 }
 
-.section-contact h1 {
-    color: white;
-    text-align: center;
-    font-size: 60px;
-    padding-top: 27vh;
+.section-whyus h1 {
+    margin-right: 30vw;
 }
+
 
 .about-flex {
     display: flex;
@@ -1051,9 +1059,28 @@ textarea::placeholder {
         width: 80%;
     }
 
+    .section-1 {
+        margin-bottom: 5vh;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .h-flex {
+        align-items: center;
+    }
+
+    .flex-row {
+        flex-direction: column;
+    }
+
     h2 {
         font-size: 24px;
     }
+
+
 
     button,
     .b1 {
@@ -1133,8 +1160,10 @@ textarea::placeholder {
 
     .main {
         display: flex;
+        flex-direction: column;
         justify-content: center;
     }
+
 
     .b2 {
         width: 165px !important;
