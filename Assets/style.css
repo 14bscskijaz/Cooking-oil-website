@@ -604,7 +604,7 @@ span {
 .lc-2 {
     background-image: url("images/china-blur.jpg");
 
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -783,7 +783,7 @@ footer li {
 }
 
 .section-whyus {
-    background-image: url(images/why-us.jpg);
+    background-image: url(images/why-us.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -793,19 +793,19 @@ footer li {
 
 .wa-icon {
     position: fixed;
-    height: 7vh;
+    height: 36px;
     right: 2.5vw;
     top: 90vh;
     z-index: 2;
-    border: .4vw solid #25D366;
+    border: 9.5px solid #40c351;
     border-radius: 50%;
-    background-color: #25D366;
+    background-color: #40c351;
     cursor: pointer;
 }
 
 .section-contact {
-    background-image: url(images/contact.jpeg);
-    background-position: center;
+    background-image: url(images/contact-us.jpg);
+    background-position: top;
     background-size: cover;
     background-repeat: no-repeat;
     height: 68vh;
@@ -823,6 +823,11 @@ footer li {
 
 .section-whyus h1 {
     margin-right: 30vw;
+}
+
+.section-contact h1 {
+    text-align: center;
+    transform: translateY(25vh);
 }
 
 
@@ -866,10 +871,10 @@ h5 {
 }
 
 .flex-grow {
-    display: flex;
+    display: grid;
     margin: 0vh 0vw;
     gap: 50px;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
 }
 
@@ -878,10 +883,11 @@ h5 {
 .flex-grow p,
 .flex-grow h3 {
     margin: 1vh 1vw 0 1vw;
+    text-align: justify;
 }
 
 .flex-grow img {
-    width: 50%;
+    width: 100%;
     height: 60vh;
 }
 
