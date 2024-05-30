@@ -25,6 +25,16 @@
             <img style="width: 30px" id="menu-icon" onclick="toggleMenu()" src="assets/menu-icon.png" />
         </div>
     </header>
+    <div class="menu" id="menu">
+        <div class="m-btn">
+            <img style="width: 30px" id="menu-icon" onclick="toggleMenu()" src="assets/images/menu-icon.png" />
+        </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="sust.html">Sustainability</a>
+        <a href="whyus.html">Why Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
     <img class="wa-icon" src="assets/images/whatsapp-icon.png"
         onclick="parent.open('https://api.whatsapp.com/send?phone=00447522363796')">
 
@@ -50,7 +60,6 @@
                 and SAF. Frying residues are turned into biogas, and other waste streams, such as plastics, are
                 thoroughly washed, sorted, and recycled. We uphold a zero-landfill policy, ensuring minimal
                 environmental impact and maximal resource efficiency. </p>
-
         </div>
     </div>
     <div class="flex-grow   ">
@@ -110,7 +119,16 @@
     </footer>
     <script>
 
-
+        function toggleMenu() {
+            var x = document.getElementById("menu");
+            if (x.style.visibility === "visible") {
+                x.style.opacity = "0";
+                x.style.visibility = "hidden";
+            } else {
+                x.style.opacity = "1";
+                x.style.visibility = "visible";
+            }
+        }
     </script>
 </body>
 

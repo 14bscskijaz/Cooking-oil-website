@@ -143,7 +143,7 @@ p {
 }
 
 .main-box h2 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 500;
 }
 
@@ -151,6 +151,12 @@ p {
     display: flex;
     flex-direction: row;
 
+}
+
+.box-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 .box-item img {
@@ -353,6 +359,11 @@ span {
     row-gap: 4vh;
 }
 
+.card-content p {
+    text-align: left !important;
+}
+
+
 .img-container {
     overflow: hidden;
 
@@ -532,52 +543,6 @@ span {
     justify-items: center;
     border-radius: 15px;
     /* Centers content horizontally */
-}
-
-@media screen and (max-width: 480px) {
-    .location-card {
-        width: 90%;
-        margin: 10px auto;
-        border-radius: 5px;
-    }
-
-    .links {
-        flex-direction: column;
-        row-gap: 2vh;
-    }
-
-
-
-
-    .box {
-        margin: 0px 65px;
-        padding: 0;
-    }
-
-    .section-3 {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .section-3 .content {
-        width: 100%;
-    }
-
-    .section-3 h2,
-    .section-3 span,
-    .section-3 p {
-        text-align: center !important;
-        display: block;
-    }
-
-    .section-3 button {
-        margin: 5px auto;
-    }
-
-    .section-3 img {
-        width: 100%;
-        margin: auto;
-    }
 }
 
 .location-card h3 {
@@ -1052,6 +1017,72 @@ textarea::placeholder {
 
 @media(max-width:650px) {
 
+    section {
+        padding: 5vh 8vw;
+    }
+
+
+    .location-card {
+        width: 90%;
+        margin: 10px auto;
+        border-radius: 5px;
+    }
+
+    .links {
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+
+    .main {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .main-box {
+        padding: 0px 15px;
+        height: 60vh;
+        gap: 3vh;
+    }
+
+    .main-box h2 {
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .box-text p {
+        font-size: 14px;
+    }
+
+    .box {
+        margin: 0px 65px;
+        padding: 0;
+    }
+
+    .section-3 {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .section-3 .content {
+        width: 100%;
+    }
+
+    .section-3 h2,
+    .section-3 span,
+    .section-3 p {
+        text-align: center !important;
+        display: block;
+    }
+
+    .section-3 button {
+        margin: 5px auto;
+    }
+
+    .section-3 img {
+        width: 100%;
+        margin: auto;
+    }
+
+
     .menu-btn {
         display: block;
     }
@@ -1060,14 +1091,6 @@ textarea::placeholder {
         display: none;
     }
 
-    .section-1 h2 {
-        font-size: 20px;
-        width: 80%;
-    }
-
-    .section-1 {
-        margin-bottom: 5vh;
-    }
 
     h1 {
         font-size: 28px;
@@ -1121,16 +1144,85 @@ textarea::placeholder {
 
     .cards {
         grid-template-columns: none;
-        grid-template-rows: 1fr 1fr 1fr;
-        row-gap: 4vh;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 8vh;
+        padding: 0;
     }
 
     .card {
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+
     }
 
     .card img {
         width: 100%;
+        height: auto;
+        position: relative;
+        top: auto;
+    }
+
+    .card-content {
+        row-gap: 2vh;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
+    .card-content p {
+        text-align: center !important;
+        padding: 0vh 3vw;
+    }
+
+    .img-left {
+        left: 0;
+        top: -10vh;
+    }
+
+    .img-right {
+        right: 0;
+        top: -10vh;
+    }
+
+    .about-content {
+        margin: 0;
+        margin-bottom: 7vh;
+        width: 80%;
+    }
+
+    .flex-grow {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .flex-grow img {
+        height: 40vh;
+    }
+
+    .flex-grow p {
+        padding: 0 2vw;
+        text-align: center;
+        margin-bottom: 3vh;
+    }
+
+    .flex-grow h3 {
+        padding: 0 2vw;
+        text-align: center;
+    }
+
+    .section-sust,
+    .section-about,
+    .section-whyus {
+        height: 28vh;
+        background-size: cover;
+    }
+
+    .section-sust h1,
+    .section-about h1,
+    .section-whyus h1 {
+        padding-top: 12vh;
     }
 
     h3 {
@@ -1164,11 +1256,6 @@ textarea::placeholder {
         width: 100%;
     }
 
-    .main {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
 
 
     .b2 {
@@ -1179,6 +1266,8 @@ textarea::placeholder {
     .section-extra {
         padding: 4vh 8vw !important;
     }
+
+
 }
 
 .gallery {
