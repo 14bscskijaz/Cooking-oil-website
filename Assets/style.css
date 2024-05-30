@@ -1195,6 +1195,7 @@ textarea::placeholder {
     .flex-grow {
         display: flex;
         flex-direction: column;
+        gap: 30px;
     }
 
     .flex-grow img {
@@ -1223,6 +1224,10 @@ textarea::placeholder {
     .section-about h1,
     .section-whyus h1 {
         padding-top: 12vh;
+    }
+
+    h4 {
+        text-align: center;
     }
 
     h3 {
