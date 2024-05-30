@@ -1033,23 +1033,31 @@ textarea::placeholder {
         row-gap: 2vh;
     }
 
+    .section-1 {
+        height: 60vh;
+    }
+
+    .section-1 h1 {
+        text-align: center;
+    }
+
     .main {
         grid-template-columns: 1fr 2fr;
     }
 
     .main-box {
         padding: 0px 15px;
-        height: 60vh;
+        height: 54vh;
         gap: 3vh;
     }
 
     .main-box h2 {
-        font-size: 18px;
+        font-size: 14px;
         font-weight: 500;
     }
 
     .box-text p {
-        font-size: 14px;
+        font-size: 13px;
     }
 
     .box {
@@ -1106,7 +1114,7 @@ textarea::placeholder {
     }
 
     h2 {
-        font-size: 24px;
+        font-size: 20px;
     }
 
 
@@ -1215,7 +1223,8 @@ textarea::placeholder {
 
     .section-sust,
     .section-about,
-    .section-whyus {
+    .section-whyus,
+    .section-contact {
         height: 28vh;
         background-size: cover;
     }
@@ -1225,6 +1234,42 @@ textarea::placeholder {
     .section-whyus h1 {
         padding-top: 12vh;
     }
+
+    .section-contact h1 {
+        transform: translateY(11.5vh);
+
+    }
+
+    h5 {
+        width: 90%;
+        text-align: center;
+        line-height: 6vh;
+    }
+
+    .form-section {
+        padding-top: 0;
+    }
+
+    form {
+        row-gap: 3vh;
+    }
+
+    form p {
+        margin-bottom: 1vh;
+    }
+
+    input {
+        height: 4vh;
+    }
+
+    textarea {
+        height: 18vh;
+    }
+
+    .location-cards {
+        display: flex;
+    }
+
 
     h4 {
         text-align: center;
