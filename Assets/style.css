@@ -1054,9 +1054,9 @@ textarea::placeholder {
     }
 
     .main-box {
-        padding: 0px 15px;
-        height: 66vh;
-        gap: 3vh;
+        padding: 5px 15px;
+        height: auto;
+        gap: 2.5vh;
     }
 
     .main-box h2 {
@@ -1129,8 +1129,9 @@ textarea::placeholder {
 
     button,
     .b1 {
-        width: 120px;
-        height: 30px;
+        width: 150px;
+        padding: 8px;
+        height: 40px;
         font-size: 14px;
     }
 
